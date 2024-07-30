@@ -16,7 +16,7 @@
   },
   "useRef": {
     "prefix": "ur",
-    "body": ["const ${1:elName}El = useRef(null)$0"],
-    "description": "React useContext() hook"
+    "body": ["const ${1:name} = useRef(null)$0"],
+    "description": "React useRef() hook"
   }
 }
