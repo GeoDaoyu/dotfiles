@@ -15,4 +15,12 @@ return {
       opts.config.header = vim.split(logo, "\n")
     end,
   },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      window = {
+        width = 24,
+      },
+    },
+  },
 }
