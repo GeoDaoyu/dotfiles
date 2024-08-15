@@ -11,7 +11,7 @@ return {
 |___//____/   \____/\____/\__,_/\___/ 
       ]]
 
-      logo = string.rep("\n", 6) .. logo .. "\n\n"
+      logo = string.rep("\n", 2) .. logo .. "\n\n"
       opts.config.header = vim.split(logo, "\n")
     end,
   },
