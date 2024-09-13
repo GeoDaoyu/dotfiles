@@ -31,6 +31,27 @@ return {
           },
         },
       },
+      window = {
+        mappings = {
+          ["<Enter>"] = "rename",
+          ["Y"] = {
+            function(state)
+              local node = state.tree:get_node()
+              local filename = vim.fn.fnamemodify(node:get_id(), ":t")
+              vim.fn.setreg("+", filename, "c")
+            end,
+            desc = "Copy FileName to Clipboard",
+          },
+          ["O"] = {
+            function(state)
+              local node = state.tree:get_node()
+              local path = node:get_id()
+              os.execute('open -R "' .. path .. '"')
+            end,
+            desc = "Open in Finder",
+          },
+        },
+      },
     },
   },
   {
