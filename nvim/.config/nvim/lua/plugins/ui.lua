@@ -51,34 +51,21 @@ return {
   },
   {
     "folke/noice.nvim",
-    opts = {
-      routes = {
-        {
-          filter = {
-            error = true,
-            find = "ts_ls",
-          },
-          opts = { skip = true },
+    opts = function(_, opts)
+      table.insert(opts.routes, {
+        filter = {
+          error = true,
+          find = "ts_ls",
         },
-        {
-          filter = {
-            error = true,
-            find = "vtsls",
-          },
-          opts = { skip = true },
+        opts = { skip = true },
+      })
+      table.insert(opts.routes, {
+        filter = {
+          error = true,
+          find = "vtsls",
         },
-        {
-          filter = {
-            event = "msg_show",
-            any = {
-              { find = "%d+L, %d+B" },
-              { find = "; after #%d+" },
-              { find = "; before #%d+" },
-            },
-          },
-          view = "mini",
-        },
-      },
-    },
+        opts = { skip = true },
+      })
+    end,
   },
 }
