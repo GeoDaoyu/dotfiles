@@ -10,15 +10,6 @@ keymap.set("i", "jj", "<Esc>", opts)
 -- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
 
--- Resize window
-keymap.set("n", "<C-w><left>", "<C-w><")
-keymap.set("n", "<C-w><right>", "<C-w>>")
-keymap.set("n", "<C-w><up>", "<C-w>+")
-keymap.set("n", "<C-w><down>", "<C-w>-")
-
--- delete in a line
-keymap.set("n", "<Leader>d", "dd")
-
 -- fix: <C-o>l works good in vim, but stupid in neovim
 keymap.set("i", "<C-o>l", "<right>", opts)
 keymap.set("i", "<C-o>2l", "<right><right>", opts)
