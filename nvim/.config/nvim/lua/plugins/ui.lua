@@ -76,13 +76,6 @@ return {
       table.insert(opts.routes, {
         filter = {
           error = true,
-          find = "ts_ls",
-        },
-        opts = { skip = true },
-      })
-      table.insert(opts.routes, {
-        filter = {
-          error = true,
           find = "vtsls",
         },
         opts = { skip = true },
