@@ -1,7 +1,7 @@
 {
   "sleep": {
     "prefix": "sleep",
-    "body": "const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms)))"
+    "body": "const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms))"
   },
   "Promise": {
     "prefix": "p",
@@ -25,7 +25,7 @@
   },
   "const arrow function assignment": {
     "prefix": "cf",
-    "body": "const ${0:name} = (${1}) => {${2}}"
+    "body": "const ${1:name} = (${2}) => {${3}}"
   },
   "console.log": {
     "prefix": "log",
