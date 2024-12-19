@@ -6,3 +6,4 @@ vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
 vim.opt.backup = false
 vim.opt.swapfile = false
+vim.g.snacks_animate = false
