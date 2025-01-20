@@ -1,6 +1,0 @@
-{
-  "layer": {
-    "prefix": "ly",
-    "body": ["const layer = view.map.findLayerById(id);"]
-  }
-}
