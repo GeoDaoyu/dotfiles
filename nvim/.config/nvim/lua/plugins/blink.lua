@@ -5,12 +5,7 @@ return {
       keymap = {
         preset = "super-tab",
       },
-      snippets = {
-        preset = "luasnip",
-      },
-      sources = {
-        default = { "lsp", "path", "snippets", "buffer" },
-      },
+      snippets = { preset = "luasnip" },
     },
   },
 }

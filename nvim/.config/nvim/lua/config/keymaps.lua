@@ -9,7 +9,3 @@ keymap.set("i", "jj", "<Esc>", opts)
 
 -- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
-
--- fix: <C-o>l works good in vim, but stupid in neovim
-keymap.set("i", "<C-o>l", "<right>", opts)
-keymap.set("i", "<C-o>2l", "<right><right>", opts)
