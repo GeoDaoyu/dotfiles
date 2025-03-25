@@ -1,0 +1,19 @@
+{
+  "name": "geodaoyu-snippets",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "all",
+        "path": "./javascript.json"
+      },
+      {
+        "language": "all",
+        "path": "./react.json"
+      },
+      {
+        "language": "html",
+        "path": "./html.json"
+      }
+    ]
+  }
+}
