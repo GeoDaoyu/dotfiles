@@ -21,13 +21,18 @@ return {
       },
       sources = {
         providers = {
-          lsp = {
-            max_items = 3,
-            score_offset = 100,
-          },
           snippets = {
             max_items = 5,
+            score_offset = 100,
+          },
+          lsp = {
             score_offset = 90,
+            transform_items = function(_, items)
+              return vim.tbl_filter(function(item)
+                return item.kind == require("blink.cmp.types").CompletionItemKind.Method
+                  or item.kind == require("blink.cmp.types").CompletionItemKind.Field
+              end, items)
+            end,
           },
           buffer = {
             max_items = 3,
