@@ -1,0 +1,16 @@
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[pull]
+    rebase = false
+
+[include]
+  path = ~/.gitconfig-github
+
+[includeIf "gitdir:~/Documents/GitHub/"]
+  path = ~/.gitconfig-github
+
+[includeIf "gitdir:~/Documents/GitLab/"]
+  path = ~/.gitconfig-gitlab
