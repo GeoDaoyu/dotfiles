@@ -4,7 +4,13 @@ return {
     opts = {
       dashboard = {
         config = function(opts, _)
-          opts.preset.keys[3].key = "p"
+          -- util.project
+          for i, key_item in ipairs(opts.preset.keys) do
+            if key_item.key == "P" then
+              opts.preset.keys[i].key = "p"
+              break
+            end
+          end
           opts.preset.header = [[
       ████ ██████           █████      ██                    
     ███████████             █████                            
