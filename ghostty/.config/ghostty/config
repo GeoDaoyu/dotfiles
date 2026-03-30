@@ -1,0 +1,7 @@
+theme = Catppuccin Frappe
+font-family = "FantasqueSansM Nerd Font Mono"
+font-family-bold = "FantasqueSansM Nerd Font Mono Bold"
+font-family-italic = FantasqueSansM Nerd Font Mono Italic"
+font-family-bold-italic = "FantasqueSansM Nerd Font Mono Bold Italic"
+font-style = "Italic"
+font-size = 24
