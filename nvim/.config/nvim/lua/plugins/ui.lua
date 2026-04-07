@@ -36,6 +36,16 @@ return {
       window = {
         mappings = {
           ["<Enter>"] = "rename",
+          ["Y"] = {
+            function(state)
+              local node = state.tree:get_node()
+              local path = node:get_id()
+              local cwd = vim.fn.getcwd()
+              local relative_path = path:gsub("^" .. vim.pesc(cwd) .. "/", "")
+              vim.fn.setreg("+", relative_path, "c")
+            end,
+            desc = "Copy Relative Path to Clipboard",
+          },
         },
       },
     },
