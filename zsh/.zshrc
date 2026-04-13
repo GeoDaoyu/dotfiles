@@ -125,3 +125,10 @@ case ":$PATH:" in
 esac
 # pnpm end
 export HOMEBREW_NO_ENV_HINTS=1
+
+# bun completions
+[ -s "/Users/geodaoyu/.bun/_bun" ] && source "/Users/geodaoyu/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
