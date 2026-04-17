@@ -8,3 +8,7 @@ GeoDaoyu's macOS dotfiles.
 - starship: prompt 配置
 - ghostty: 终端配置
 - claude: Claude Code 宠物配置
+
+## 使用方式
+
+stow
