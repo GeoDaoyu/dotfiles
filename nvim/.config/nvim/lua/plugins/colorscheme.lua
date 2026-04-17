@@ -1,17 +1,17 @@
 return {
   {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "catppuccin",
-    },
-  },
-  {
     "catppuccin/nvim",
     name = "catppuccin",
     priority = 1000,
     opts = {
       flavour = "frappe",
       integrations = { blink_cmp = true },
+    },
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "catppuccin-frappe",
     },
   },
 }
