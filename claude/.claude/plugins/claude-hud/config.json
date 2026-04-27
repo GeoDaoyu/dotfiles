@@ -1,0 +1,13 @@
+{
+  "display": {
+    "showTools": true,
+    "showAgents": true,
+    "showTodos": true,
+    "showDuration": true,
+    "showConfigCounts": true,
+    "showMemoryUsage": true
+  },
+  "gitStatus": {
+    "enabled": false
+  }
+}
