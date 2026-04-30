@@ -4,8 +4,7 @@
     "showAgents": true,
     "showTodos": true,
     "showDuration": true,
-    "showConfigCounts": true,
-    "showMemoryUsage": true
+    "showConfigCounts": true
   },
   "gitStatus": {
     "enabled": false
