@@ -7,7 +7,6 @@ GeoDaoyu's macOS dotfiles.
 - nvim: Neovim 配置
 - starship: prompt 配置
 - ghostty: 终端配置
-- claude: Claude Code 宠物配置
 
 ## 使用方式
 
