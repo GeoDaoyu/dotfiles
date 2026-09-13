@@ -44,3 +44,10 @@ end
 if test -f "/opt/homebrew/share/autojump/autojump.fish"
     source "/opt/homebrew/share/autojump/autojump.fish"
 end
+
+# ============================================
+# 8. SillyTavern
+# ============================================
+function st
+    cd /Users/geodaoyu/Documents/GitHub/SillyTavern-Launcher/SillyTavern; and ./start.sh
+end
